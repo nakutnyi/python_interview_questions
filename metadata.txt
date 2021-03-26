@@ -1,0 +1,11 @@
+---
+title:
+- type: main
+  text: Питання для підготовки до Python Developer інтерв'ю
+- type: edition
+  text: dev-build
+toc-title: Зміст
+language: ua-UA
+stylesheet: book_res/style.css
+cover-image: book_res/cover.png
+...
