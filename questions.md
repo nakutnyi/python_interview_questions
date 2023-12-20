@@ -88,7 +88,7 @@ list(set([1, 2, 2, 2, 3, 3, 1])))
 Варіант з OrderedDict. Гарантує порядок елементів.
 
 ```python
->>> з колекції import OrderedDict
+>>> from collections import OrderedDict
 >>> list(OrderedDict.fromkeys([1, 2, 2, 2, 3, 3, 1])))
 [1, 2, 3]
 ````
@@ -312,24 +312,24 @@ Python прагне залишити не менше третини осеред
 
 ```python
 def foo(bar=[]):
-bar.append(1)
-return bar
+    bar.append(1)
+        return bar
 foo()
 >>> [1]
 foo()
-[1, 1]
+>>> [1, 1]
 foo()
 >>> [1, 1, 1]
 ````
 
-Хорошим тоном вважається вказувати параметру порожнє незмінне значення, наприклад `0`, `None`, ````, `False`. У тілі функції перевіряти на заповненість та створювати нову колекцію:
+Хорошим тоном вважається вказувати параметру порожнє незмінне значення, наприклад `0`, `None`, `'''`, `False`. У тілі функції перевіряти на заповненість та створювати нову колекцію:
 
 ```python
 def foo(bar=None):
-if bar is None:
-bar = []
-bar.append(1)
-return bar
+    if bar is None:
+        bar = []
+    bar.append(1)
+    return bar
 foo()
 >>> [1]
 foo()
