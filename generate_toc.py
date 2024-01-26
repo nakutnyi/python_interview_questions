@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
     if '--check' in sys.argv:
         if original != changed:
-            print('Error')
+            print('Error: original and changed do not match')
             sys.exit(1)
     else:
         with open('README.md', 'w', encoding="utf8") as fp:
